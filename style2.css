@@ -1,0 +1,75 @@
+.content{
+    width: 0%;
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(134, 133, 133);
+    overflow-x: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.small{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    background-color: lightpink;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+}
+/*buttom nav pup up zone*/
+
+.search, .favourite, .notification, .chat-zone, .post-zone{
+    height: 0vh;
+    width: 0%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+.close-search{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+}
+.search-bar{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+#search{
+    height: 30px;
+}
+.search-content, .favourite-content, .notification-content, .chat-content, .post-content{
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    border: 2px solid white;
+    margin: 20px;
+    text-align: center;
+}
+/* favourite zone*/

@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="header-zone">
+        <span class="logo">CarlSocial</span>
+        <div class="chat" id="chat-area"><i class="bi bi-chat-dots"></i></div>
+        <div class="post" id="post"><i class="bi bi-stickies"></i></div>
+    </div>
+    <!--profile menu display zone-->
+    <div class="content" id="content">
+                        
+        <span class="bi bi-person-circle"></span>
+        <small class="small">Usser name</small>
+        <small class="small">email@gmail.com</small>
+        <small class="small">Status: <span>student</span></small>
+        <button class="btn" onclick="closeMenu()">Close</button>
+    </div>
+    <div class="container">
+        <!-----nav menu with hamburger------>
+        <div class="menu">
+            <div class="usser">
+                <span onclick="openMenu()" class="bi bi-person-circle">
+                    <br>
+                    <small class="m-2">usser</small>
+                   
+                </span>
+            </div>
+            <div class="overlay" id="myNav">
+                <a href="#"
+                onclick="closeNav()"
+                class="closebtn">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        
+        <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;</span>
+            <div class="menu-bar">
+                <span class="m-1">
+                    <i class=" bi-house m-1"></i>
+                </span>
+                <span class="m-1" id="search-button">
+                    <i class="bi bi-search"></i>
+                </span>
+                <span class="m-1" id="fav-menu">
+                    <i class="bi-heart-fill m-1" style="width: 200px; height: 200px;"></i>
+                </span>
+                <span class="m-1" id="notif">
+                    <i class="bi-bell-fill m-1"></i>
+                </span>
+                
+                  
+            </div>
+<!--card area for profile post display-->
+            <div class="card">
+                <div class="iprofile">
+                    <div class="picture">
+                            <img class="img1" src="images/HKMG8947.JPG" alt="" srcset="">
+                        <div class="name">
+                            <h3>User name</h3>
+                            <span>Date</span>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <span>More</span>
+                    </div>
+                </div>
+                <div class="content-area">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+                    <div class="reaction">
+                        <div id="react" class="like"><i class="bi bi-emoji-heart-eyes-fill"></i>
+                        <span id="like"></span>
+                        </div>
+                        <div class="comment"><i class="bi bi-journal-check"></i></div>
+                        <div class="shear"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+    <div class="feed-area">
+        <div class="feed">
+            <div class="iprofile">
+                <div class="picture">
+                        <img class="img1" src="images/HKMG8947.JPG" alt="" srcset="">
+                    <div class="name">
+                        <h3>User name</h3>
+                        <span>Date</span>
+                    </div>
+                </div>
+
+                <div class="more">
+                    <span>More</span>
+                </div>
+            </div>
+            <div class="content-area">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+                <div class="reaction">
+                    <div id="react" class="like"><i class="bi bi-emoji-heart-eyes-fill"></i>
+                    <span id="like"></span>
+                    </div>
+                    <div class="comment"><i class="bi bi-journal-check"></i></div>
+                    <div class="shear"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="feed">
+            <div class="iprofile">
+                <div class="picture">
+                        <img class="img1" src="images/XZPL9784.JPG" alt="" srcset="">
+                    <div class="name">
+                        <h3>User name</h3>
+                        <span>Date</span>
+                    </div>
+                </div>
+
+                <div class="more">
+                    <span>More</span>
+                </div>
+            </div>
+            <div class="content-area">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+                <div class="reaction">
+                    <div class="like"><i class="bi bi-emoji-heart-eyes-fill"></i></div>
+                    <div class="comment"><i class="bi bi-journal-check"></i></div>
+                    <div class="shear"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="feed">
+            <div class="iprofile">
+                <div class="picture">
+                        <img class="img1" src="images/QSRE9328.JPG" alt="" srcset="">
+                    <div class="name">
+                        <h3>User name</h3>
+                        <span>Date</span>
+                    </div>
+                </div>
+
+                <div class="more">
+                    <span>More</span>
+                </div>
+            </div>
+            <div class="content-area">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+                <div class="reaction">
+                    <div class="like"><i class="bi bi-emoji-heart-eyes-fill"></i></div>
+                    <div class="comment"><i class="bi bi-journal-check"></i></div>
+                    <div class="shear"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="feed">
+            <div class="iprofile">
+                <div class="picture">
+                        <img class="img1" src="images/QFHO6900.JPG" alt="" srcset="">
+                    <div class="name">
+                        <h3>User name</h3>
+                        <span>Date</span>
+                    </div>
+                </div>
+
+                <div class="more">
+                    <span>More</span>
+                </div>
+            </div>
+            <div class="content-area">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate?</p>
+                <div class="reaction">
+                    <div class="like"><i class="bi bi-emoji-heart-eyes-fill"></i></div>
+                    <div class="comment"><i class="bi bi-journal-check"></i></div>
+                    <div class="shear"><i class="bi bi-arrow-up-right-circle-fill"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!---------buttom nav pup up-->
+        <div class="search" id="search-1">
+            <span class="close-search" id="close-search"><i class="bi bi-x-lg"></i></span>
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="Enter search item">
+                <div class="sea"><i class="bi bi-search"></i></div>
+            </div>
+            <div class="search-content">
+                <span>No search item found</span>
+            </div>
+        </div>
+         <!---------buttom nav pup up/ favourite zone-->
+         <div class="favourite" id="favourite">
+            <span class="close-search" id="close-fav"><i class="bi bi-x-lg"></i></span>
+            
+            <div class="favourite-content">
+                <span>NO item in favourite</span>
+            </div>
+        </div>
+        <!---------buttom nav pup up/ notification zone-->
+        <div class="notification" id="notification">
+            <span class="close-search" id="close-not"><i class="bi bi-x-lg"></i></span>
+            
+            <div class="notification-content">
+                <span>NO Notification</span>
+            </div>
+        </div>
+        <!--chat zone top header-->
+        <div class="chat-zone" id="chat-zone">
+            <span class="close-search" id="close-chat"><i class="bi bi-x-lg"></i></span>
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="Enter search item">
+                <div class=""><i class="bi bi-search"></i></div>
+            </div>
+            
+            <div class="chat-content">
+                <span>NO Message</span>
+            </div>
+        </div>
+        <!--post zone top header-->
+        <div class="post-zone" id="post-zone">
+            <span class="close-search" id="close-post"><i class="bi bi-x-lg"></i></span>
+            
+            <div class="post-content">
+                <span>NO post yet</span>
+            </div>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
